@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-agent-orchestration"
+version = "1.0.0"
+description = "Framework for building multi-agent AI orchestrator workflows with streaming and cost tracking"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Luke Steuber", email = "luke@steuber.dev"}
+]
+keywords = [
+    "ai",
+    "llm",
+    "agent",
+    "orchestration",
+    "multi-agent",
+    "workflow",
+    "streaming",
+    "async"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: AsyncIO",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai>=1.0.0"]
+anthropic = ["anthropic>=0.18.0"]
+docs = ["reportlab>=4.0.0", "markdown>=3.4.0"]
+all = [
+    "openai>=1.0.0",
+    "anthropic>=0.18.0",
+    "reportlab>=4.0.0",
+    "markdown>=3.4.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lukeslp/multi-agent-orchestration"
+Repository = "https://github.com/lukeslp/multi-agent-orchestration"
+Issues = "https://github.com/lukeslp/multi-agent-orchestration/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["orchestration*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_ignores = true
+disallow_untyped_defs = false
