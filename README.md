@@ -1,6 +1,11 @@
 # Multi-Agent Orchestration
 
-Comprehensive framework for building multi-agent AI orchestrator workflows with standardized patterns, streaming support, and cost tracking.
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI: geepers-orchestrators](https://img.shields.io/badge/PyPI-geepers--orchestrators-orange.svg)](https://pypi.org/project/geepers-orchestrators/)
+[![Status: Active](https://img.shields.io/badge/status-active-success.svg)]()
+
+Comprehensive framework for building multi-agent LLM orchestrator workflows with standardized patterns, streaming support, and cost tracking.
 
 ## Features
 

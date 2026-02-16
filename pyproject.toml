@@ -3,13 +3,13 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "multi-agent-orchestration"
-version = "1.0.0"
-description = "Framework for building multi-agent AI orchestrator workflows with streaming and cost tracking"
+name = "geepers-orchestrators"
+version = "1.0.2"
+description = "Orchestration patterns for geepers multi-agent workflows with streaming and cost tracking"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Luke Steuber", email = "luke@steuber.dev"}
+    {name = "Luke Steuber", email = "luke@dr.eamer.dev"}
 ]
 keywords = [
     "ai",
