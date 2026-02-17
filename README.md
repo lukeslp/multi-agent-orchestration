@@ -5,7 +5,7 @@
 [![PyPI: geepers-orchestrators](https://img.shields.io/badge/PyPI-geepers--orchestrators-orange.svg)](https://pypi.org/project/geepers-orchestrators/)
 [![Status: Active](https://img.shields.io/badge/status-active-success.svg)]()
 
-Comprehensive framework for building multi-agent LLM orchestrator workflows with standardized patterns, streaming support, and cost tracking.
+Base classes and built-in patterns for multi-agent LLM workflows — handles the scaffolding (streaming, cost tracking, retries) so you can focus on what agents actually do.
 
 ## Features
 
